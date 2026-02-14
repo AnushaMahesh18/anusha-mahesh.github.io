@@ -8,11 +8,7 @@ function typeRotate(el, words, period = 1400) {
 
   function tick() {
     const full = words[wordIndex % words.length];
-
-    txt = isDeleting
-      ? full.substring(0, txt.length - 1)
-      : full.substring(0, txt.length + 1);
-
+    txt = isDeleting ? full.substring(0, txt.length - 1) : full.substring(0, txt.length + 1);
     el.textContent = txt;
 
     let delta = isDeleting ? 40 : 65;
@@ -21,7 +17,6 @@ function typeRotate(el, words, period = 1400) {
 
     setTimeout(tick, delta);
   }
-
   tick();
 }
 
