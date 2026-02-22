@@ -580,9 +580,13 @@ input:focus, textarea:focus{
 }
 
 .skills-title{
-  text-align:center;
+  text-align:left;
   margin-bottom: 30px;
+  max-width:1120px;
+  margin-left:auto;
+  margin-right:auto;
 }
+
 
 .skills-title h2{
   font-size: 52px;
