@@ -662,3 +662,64 @@ input:focus, textarea:focus{
 @media (max-width: 420px){
   .skills-cols{ grid-template-columns: 1fr; }
 }
+
+
+/* ===== Certificates Section Styling ===== */
+
+#certificates .certs-grid{
+  max-width:1100px;
+  margin:30px auto 0;
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:20px;
+}
+
+#certificates .cert-card{
+  background:#0b1220;
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:18px;
+  padding:24px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:20px;
+  box-shadow:0 18px 50px rgba(0,0,0,0.20);
+}
+
+#certificates .cert-text h3{
+  margin:0 0 8px;
+  font-size:22px;
+  font-weight:900;
+  color:#ffffff;
+  line-height:1.2;
+}
+
+#certificates .cert-text p{
+  margin:0;
+  font-size:16px;
+  font-weight:600;
+  color:#94a3b8;
+}
+
+#certificates .cert-view{
+  padding:10px 16px;
+  border-radius:12px;
+  background:rgba(255,255,255,0.12);
+  border:1px solid rgba(255,255,255,0.15);
+  color:#ffffff;
+  font-weight:800;
+  text-decoration:none;
+  transition:all 0.2s ease;
+}
+
+#certificates .cert-view:hover{
+  transform:translateY(-3px);
+  background:rgba(255,255,255,0.18);
+}
+
+/* Mobile Responsive */
+@media (max-width: 820px){
+  #certificates .certs-grid{
+    grid-template-columns:1fr;
+  }
+}
