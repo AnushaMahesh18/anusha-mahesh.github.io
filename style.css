@@ -1,3 +1,9 @@
+:root {
+  --brand-color: rgb(52, 63, 89);
+  --brand-border: rgba(52, 63, 89, 0.3);
+  --brand-light-bg: rgba(52, 63, 89, 0.06);
+}
+
 :root{
   --bg:#ffffff;
   --panel:#0b1220;
@@ -722,4 +728,89 @@ input:focus, textarea:focus{
   #certificates .certs-grid{
     grid-template-columns:1fr;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== BRAND COLOR: rgb(52, 63, 89) ===== */
+
+/* Buttons: View Project, Contact, Download Resume */
+.work-links a,
+.btn-primary,
+.contact .btn,
+.form button {
+  background: rgb(52, 63, 89) !important;
+  color: #ffffff !important;
+  border: none !important;
+  transition: 0.3s ease;
+}
+
+.work-links a:hover,
+.btn-primary:hover,
+.contact .btn:hover,
+.form button:hover {
+  background: #2d374f !important;
+}
+
+/* "What I'm Building Toward" Card */
+.focus-card {
+  background: rgba(52, 63, 89, 0.06) !important;
+  border: 1px solid rgba(52, 63, 89, 0.3) !important;
+}
+
+/* Resume Cards */
+.timeline-content {
+  border-left: 4px solid rgb(52, 63, 89) !important;
+}
+
+/* Portfolio Cards */
+.work {
+  border: 1px solid rgba(52, 63, 89, 0.3) !important;
+  transition: 0.3s ease;
+}
+
+.work:hover {
+  box-shadow: 0 8px 18px rgba(52, 63, 89, 0.15) !important;
+}
+
+/* Technical Skills Cards */
+.skills-panel {
+  border: 1px solid rgba(52, 63, 89, 0.3) !important;
+}
+
+/* Certificate Cards */
+.cert-card {
+  border: 1px solid rgba(52, 63, 89, 0.3) !important;
+  transition: 0.3s ease;
+}
+
+.cert-card:hover {
+  box-shadow: 0 8px 18px rgba(52, 63, 89, 0.15) !important;
+}
+
+/* Contact Section Cards */
+.contact-info,
+.contact-form {
+  border: 1px solid rgba(52, 63, 89, 0.3) !important;
+}
+
+/* Contact Form Focus */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: rgb(52, 63, 89) !important;
+  box-shadow: 0 0 0 3px rgba(52, 63, 89, 0.1) !important;
 }
